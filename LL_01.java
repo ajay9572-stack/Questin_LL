@@ -1,4 +1,5 @@
 public class LL_01 {
+    // reverese a link list
     static class node {
         int data;
         node next;
