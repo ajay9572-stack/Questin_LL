@@ -56,8 +56,8 @@ public class LL_03 {
         node temp1 = head;
         node temp2 = head2;
 
-        while(temp1 != null && temp2 != null){
-            if(temp1.data != temp2.data){
+        while(temp1 != null && temp2 != null){ // if temp1 and temp2 are not null then check either
+            if(temp1.data != temp2.data){         // temp1 data and temp2 data are equal or not
                 return false;
             }else{
                 temp1 = temp1.next;
