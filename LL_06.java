@@ -1,5 +1,5 @@
 public class LL_06 {
-
+// remove duplicate from shorted link list
     public class node{
        int data;
        node next;
