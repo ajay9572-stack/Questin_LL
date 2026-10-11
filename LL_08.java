@@ -1,4 +1,5 @@
 public class LL_08 {
+// odd even link list
      public class node{
     int data;
     node next;
