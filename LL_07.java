@@ -1,5 +1,5 @@
 public class LL_07 {
-
+// kth node from end of link list
   public class node{
     int data;
     node next;
