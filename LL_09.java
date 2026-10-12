@@ -1,4 +1,5 @@
 public class LL_09 {
+// merge two node between zero
     public class node{
         int data;
         node next;
