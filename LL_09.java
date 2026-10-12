@@ -46,7 +46,7 @@ public class LL_09 {
             System.out.print(temp.data+ " ");
             temp = temp.next;
         }
-       
+       System.out.println();
     }
     public static void main(String[] args) {
       LL_09 myList = new LL_09();
