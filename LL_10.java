@@ -67,8 +67,8 @@ private node addOne() {
     public static void main(String[] args) {
         LL_10 myList = new LL_10();
         myList.insertAtHead(9);
-        myList.insertAtHead(8);
-        myList.insertAtHead(7);
+        // myList.insertAtHead(8);
+        // myList.insertAtHead(7);
         myList.display();
         myList.addOne();
         myList.display();
