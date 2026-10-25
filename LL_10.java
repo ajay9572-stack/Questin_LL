@@ -43,30 +43,32 @@ public class LL_10 {
         }
         return  prev;
     }
-    private node addOne(){
-        head = reverse(head);
-        node curr = head;
-        int carry = 1;
-        while (curr != null) {
-            int nodeValue = curr.data;
-            int sum = nodeValue + carry;
-            int digit = sum %10;
-            curr.data = digit;
-            carry = sum / 10;
-            if(curr.next != null && carry >0){
-               curr.next = new node(carry);
-               carry = 0;
-            }
-            curr = curr.next;
+
+private node addOne() {
+    head = reverse(head);
+    node curr = head;
+    int carry = 1;
+
+    while (curr != null && carry > 0) {
+        int sum = curr.data + carry;
+        curr.data = sum % 10;
+        carry = sum / 10;
+        if (curr.next == null && carry > 0) {
+            curr.next = new node(carry);
+            tail = curr.next;
+            carry = 0;
         }
-        head = reverse(head);
-        return  head;
+        curr = curr.next;
     }
+    head = reverse(head);
+    return head;
+}
+
     public static void main(String[] args) {
         LL_10 myList = new LL_10();
-        myList.insertAtHead(3);
-        myList.insertAtHead(2);
-        myList.insertAtHead(1);
+        myList.insertAtHead(9);
+        myList.insertAtHead(8);
+        myList.insertAtHead(7);
         myList.display();
         myList.addOne();
         myList.display();
