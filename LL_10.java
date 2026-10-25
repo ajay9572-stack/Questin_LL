@@ -1,0 +1,74 @@
+public class LL_10 {
+
+    public class node {
+    int data;
+    node next;
+    node(int data){
+        this.data = data;
+        this.next = null;
+    }    
+    }
+    private node head;
+    private node tail;
+    private int size;
+
+    public void insertAtHead(int data){
+        node newNode = new node(data);
+        if(head == null){
+            head = newNode;
+            tail = newNode;
+        }else{
+            newNode.next = head;
+            head = newNode;
+        }
+        size++;
+    }
+    public void display(){
+        node temp = head;
+        while(temp != null){
+            System.out.print(temp.data);
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+    private node reverse( node head){
+        node curr= head;
+        node prev = null;
+        
+        while (curr != null){
+           node forward = curr.next;
+            curr.next =prev;
+            prev = curr;
+            curr = forward;
+        }
+        return  prev;
+    }
+    private node addOne(){
+        head = reverse(head);
+        node curr = head;
+        int carry = 1;
+        while (curr != null) {
+            int nodeValue = curr.data;
+            int sum = nodeValue + carry;
+            int digit = sum %10;
+            curr.data = digit;
+            carry = sum / 10;
+            if(curr.next != null && carry >0){
+               curr.next = new node(carry);
+               carry = 0;
+            }
+            curr = curr.next;
+        }
+        head = reverse(head);
+        return  head;
+    }
+    public static void main(String[] args) {
+        LL_10 myList = new LL_10();
+        myList.insertAtHead(3);
+        myList.insertAtHead(2);
+        myList.insertAtHead(1);
+        myList.display();
+        myList.addOne();
+        myList.display();
+    }
+}
