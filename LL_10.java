@@ -1,5 +1,5 @@
 public class LL_10 {
-
+// add 1 to a link list number
     public class node {
     int data;
     node next;
