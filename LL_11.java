@@ -22,6 +22,7 @@ public class LL_11 {
             newNode.next = head;
             head = newNode;
         }
+        size++;
     }
     public void display(){
         node temp = head;
