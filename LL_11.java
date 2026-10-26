@@ -1,4 +1,5 @@
 public class LL_11 {
+//intersection of two link list
     public class node{
         int data;
         node next;
