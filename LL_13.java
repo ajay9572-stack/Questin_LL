@@ -1,6 +1,5 @@
-
 public class LL_13 {
-
+ // short link list of 0's, 1's, 2's
     public class node {
         int data;
         node next;
