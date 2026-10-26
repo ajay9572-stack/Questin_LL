@@ -1,4 +1,5 @@
 public class LL_12 {
+//Rotate list to the right 
     public class node{
         int data;
         node next;
