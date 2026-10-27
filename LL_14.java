@@ -1,4 +1,5 @@
-public class LL_14 {
+public class LL_14 {\
+//swap the kth node from begning and end
     public class node{
         int data;
         node next;
