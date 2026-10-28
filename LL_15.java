@@ -1,5 +1,5 @@
 public class LL_15 {
-// add two link list 
+// delete N node after M node of Link List 
     public class node{
         int data;
         node next;
