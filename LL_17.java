@@ -1,4 +1,5 @@
 public class LL_17 {
+// detect starting node 
     public class node{
         int data;
         node next;
