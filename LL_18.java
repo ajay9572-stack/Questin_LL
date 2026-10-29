@@ -1,4 +1,5 @@
 public class LL_18 {
+// partition the link list accourding to give value
     public class node {
         int data;
         node next;
@@ -8,7 +9,6 @@ public class LL_18 {
             this.next = null;
         }
     }
-
     private node head;
     private node tail;
     private int size;
