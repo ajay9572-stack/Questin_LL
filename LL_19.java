@@ -1,4 +1,5 @@
 public class LL_19 {
+//reverse link list of group k
     public class node {
         int data;
         node next;
