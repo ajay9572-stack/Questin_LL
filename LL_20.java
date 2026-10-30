@@ -1,4 +1,5 @@
 public class LL_20 {
+//split link list into parts
     public class node {
         int data;
         node next;
