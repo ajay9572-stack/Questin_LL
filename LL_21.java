@@ -1,4 +1,5 @@
 public class LL_21 {
+//flatten of link list
     public class node {
         int data;
         node next;
