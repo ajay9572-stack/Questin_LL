@@ -28,7 +28,6 @@ public class LL_21 {
         }
         size++;
     }
-
     public void display() {
         node temp = head;
         while (temp != null) {
@@ -37,7 +36,6 @@ public class LL_21 {
         }
         System.out.println();
     }
-
     public node flatten() {
         if (head == null) {
             return head;
