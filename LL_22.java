@@ -28,7 +28,6 @@ public class LL_22 {
         }
         size++;
     }
-
     public void display() {
         node temp = head;
         while (temp != null) {
@@ -49,13 +48,10 @@ public class LL_22 {
         }
         return  prev;
     }
-
 public  node doubleLL() {
     head = reverse(head);
-
     node dummy = new node(-1);
     node curr = dummy;
-
     node temp = head;
     int carry = 0;
 
